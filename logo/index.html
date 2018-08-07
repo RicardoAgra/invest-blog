@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .container {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                padding: 20px;
+                border-radius: 175px;
+                border: 3px solid rgb(160, 136, 0);;
+            }
+            
+            .svg {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%,-55% );
+            }
+
+            .bill {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate( -58%,-10% );
+                height: 120px;
+            }
+
+            .first-place,
+            .second-place,
+            .third-place {
+                stroke-width: 6;
+                stroke: rgb(160, 136, 0);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg class="svg" style="height: 200px;" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+
+                <defs>
+                    <radialGradient id="grad2">
+                        <stop offset="0%" style="stop-color:rgb(0, 179, 45);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(0, 172, 29);stop-opacity:1" />
+                    </radialGradient>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(75, 154, 199);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(30, 12, 133);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad200" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(24, 146, 54);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(14, 116, 31);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <path fill="url(#grad1)" class="first-place" d="M370,247.841 H146 v255 h220 v-255"/>
+                
+                <path fill="url(#grad1)" class="third-place" d="M506,352.841 H381 v150 h121 v-150"/>
+                
+                <path fill="url(#grad1)" class="second-place" d="M3,322.841 v180 h128 v-180 H0z"/>
+            </svg>
+        
+            <svg class="bill" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 25.771 25.771" style="enable-background:new 0 0 25.771 25.771;" xml:space="preserve">
+
+                <path class="rectangle" style="fill:url(#grad200);" d="M24.171,13.728v9.8h-18.8v-9.8H24.171 M25.771,12.128h-22v13h22V12.128L25.771,12.128z"/>
+
+                <g>
+                    <path style="fill: url(#grad200)" d="M19.771,12.128l2.252,2.252c-0.017,0.083-0.05,0.16-0.05,0.248c0,0.717,0.581,1.297,1.298,1.297
+                        c0.088,0,0.164-0.033,0.247-0.049l2.253,2.252v-6H19.771z"/>
+                    <circle style="fill: url(#grad200)" cx="21.271" cy="18.628" r="1.298"/>
+                    <ellipse style="fill: url(#grad200)" cx="14.771" cy="18.628" rx="3.926" ry="3.414"/>
+                    <circle style="fill: url(#grad200)" cx="8.271" cy="18.628" r="1.297"/>
+                    <path style="fill: url(#grad200)" d="M3.771,18.128l2.252-2.252c0.083,0.017,0.16,0.05,0.248,0.05c0.717,0,1.297-0.581,1.297-1.298
+                        c0-0.088-0.033-0.164-0.05-0.247l2.253-2.253h-6V18.128z"/>
+                    <path style="fill: url(#grad200)" d="M7.569,22.628c0-0.717-0.581-1.297-1.298-1.297c-0.088,0-0.164,0.033-0.247,0.049l-2.253-2.252v6h6
+                        l-2.252-2.252C7.536,22.793,7.569,22.715,7.569,22.628z"/>
+                    <path style="fill: url(#grad200)" d="M23.271,21.33c-0.717,0-1.297,0.581-1.297,1.298c0,0.088,0.033,0.164,0.05,0.247l-2.253,2.253h6v-6
+                        l-2.252,2.252C23.436,21.363,23.359,21.33,23.271,21.33z"/>
+                </g>
+                
+            </svg>
+        </div>
+
+    </body>
+</html>
